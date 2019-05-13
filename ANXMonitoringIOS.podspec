@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ANXMonitoringIOS'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Anexia Version Monitoring Framework'
   s.swift_version    = '4.0'
 
@@ -31,7 +31,7 @@ Anexia Version Monitoring Framework to collecting Dependency versions & licenses
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Classes/*.{h,m,swift}'
+  s.source_files = 'Core/*.{h,m,swift}'
   #s.source_files = 'Classes/**/*.{h,m,swift}'
   #"FOLDERNAME1/*.{swift}", "FOLDERNAME2/*.{swift}"
   # s.resource_bundles = {
