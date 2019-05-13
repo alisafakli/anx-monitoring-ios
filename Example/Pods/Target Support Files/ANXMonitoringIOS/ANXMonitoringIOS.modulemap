@@ -1,0 +1,6 @@
+framework module ANXMonitoringIOS {
+  umbrella header "ANXMonitoringIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

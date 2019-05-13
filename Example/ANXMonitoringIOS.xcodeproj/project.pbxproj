@@ -40,11 +40,11 @@
 		607FACE51AFB9204008FA782 /* ANXMonitoringIOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANXMonitoringIOS_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8BAD2699771812DC5A178D8F /* ANXMonitoringIOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ANXMonitoringIOS.podspec; path = ../ANXMonitoringIOS.podspec; sourceTree = "<group>"; };
-		8EA6740ED5A0A84887F38BA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8BAD2699771812DC5A178D8F /* ANXMonitoringIOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ANXMonitoringIOS.podspec; path = ../ANXMonitoringIOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8EA6740ED5A0A84887F38BA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9F5866444A8546A129677490 /* Pods-ANXMonitoringIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANXMonitoringIOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANXMonitoringIOS_Example/Pods-ANXMonitoringIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BC7DF5B71E7001527057DC8E /* Pods_ANXMonitoringIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANXMonitoringIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F619879953526FBA28514554 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F619879953526FBA28514554 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FBD1D25C31D5D4426EA4E4DC /* Pods-ANXMonitoringIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANXMonitoringIOS_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANXMonitoringIOS_Tests/Pods-ANXMonitoringIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FDC5B77FFC96FD2F6BE7AB33 /* Pods_ANXMonitoringIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANXMonitoringIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -226,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

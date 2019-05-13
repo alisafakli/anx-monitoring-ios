@@ -1,0 +1,22 @@
+{
+  "name": "ANXMonitoringIOS",
+  "version": "0.1.0",
+  "summary": "A short description of ANXMonitoringIOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/anx-asafakli/ANXMonitoringIOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "anx-asafakli": "asafakli@anexia-it.com"
+  },
+  "source": {
+    "git": "https://github.com/anx-asafakli/ANXMonitoringIOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ANXMonitoringIOS/Classes/**/*"
+}

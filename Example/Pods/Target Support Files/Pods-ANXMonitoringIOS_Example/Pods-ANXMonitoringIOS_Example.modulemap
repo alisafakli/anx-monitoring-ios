@@ -1,0 +1,6 @@
+framework module Pods_ANXMonitoringIOS_Example {
+  umbrella header "Pods-ANXMonitoringIOS_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

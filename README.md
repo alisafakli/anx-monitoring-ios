@@ -22,7 +22,7 @@ pod 'ANXMonitoringIOS'
 
 ## Author
 
-anx-asafakli, asafakli@anexia-it.com
+Ali Safakli, Mobile Developer
 
 ## License
 

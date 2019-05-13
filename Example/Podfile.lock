@@ -1,0 +1,16 @@
+PODS:
+  - ANXMonitoringIOS (0.1.0)
+
+DEPENDENCIES:
+  - ANXMonitoringIOS (from `../`)
+
+EXTERNAL SOURCES:
+  ANXMonitoringIOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ANXMonitoringIOS: 746cc6f493e53419f6ec4d5691244ce063af9f26
+
+PODFILE CHECKSUM: 79591f81edc6cbfa8add205917a8e767a01be1f8
+
+COCOAPODS: 1.5.3
