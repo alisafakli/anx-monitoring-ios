@@ -8,11 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		436B9BD9F14D1EA398F6AFC5E6B30E3C /* Pods-ANXMonitoringIOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F66947D5292E20586BF3771D4C15CD /* Pods-ANXMonitoringIOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		568DD55222897562002C3656 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54122897562002C3656 /* ParameterEncoding.swift */; };
+		568DD55322897562002C3656 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54122897562002C3656 /* ParameterEncoding.swift */; };
+		568DD55422897562002C3656 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54122897562002C3656 /* ParameterEncoding.swift */; };
+		568DD55522897562002C3656 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54322897562002C3656 /* NetworkManager.swift */; };
+		568DD55622897562002C3656 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54322897562002C3656 /* NetworkManager.swift */; };
+		568DD55722897562002C3656 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54322897562002C3656 /* NetworkManager.swift */; };
+		568DD55822897562002C3656 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54522897562002C3656 /* GithubAPI.swift */; };
+		568DD55922897562002C3656 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54522897562002C3656 /* GithubAPI.swift */; };
+		568DD55A22897562002C3656 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54522897562002C3656 /* GithubAPI.swift */; };
+		568DD55B22897562002C3656 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54722897562002C3656 /* Router.swift */; };
+		568DD55C22897562002C3656 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54722897562002C3656 /* Router.swift */; };
+		568DD55D22897562002C3656 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54722897562002C3656 /* Router.swift */; };
+		568DD55E22897562002C3656 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54822897562002C3656 /* NetworkLogger.swift */; };
+		568DD55F22897562002C3656 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54822897562002C3656 /* NetworkLogger.swift */; };
+		568DD56022897562002C3656 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54822897562002C3656 /* NetworkLogger.swift */; };
+		568DD56122897562002C3656 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54A22897562002C3656 /* Runtime.swift */; };
+		568DD56222897562002C3656 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54A22897562002C3656 /* Runtime.swift */; };
+		568DD56322897562002C3656 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54A22897562002C3656 /* Runtime.swift */; };
+		568DD56422897562002C3656 /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54B22897562002C3656 /* Modules.swift */; };
+		568DD56522897562002C3656 /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54B22897562002C3656 /* Modules.swift */; };
+		568DD56622897562002C3656 /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54B22897562002C3656 /* Modules.swift */; };
+		568DD56722897562002C3656 /* MonitoringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54C22897562002C3656 /* MonitoringModel.swift */; };
+		568DD56822897562002C3656 /* MonitoringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54C22897562002C3656 /* MonitoringModel.swift */; };
+		568DD56922897562002C3656 /* MonitoringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54C22897562002C3656 /* MonitoringModel.swift */; };
+		568DD56A22897562002C3656 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54E22897562002C3656 /* Constants.swift */; };
+		568DD56B22897562002C3656 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54E22897562002C3656 /* Constants.swift */; };
+		568DD56C22897562002C3656 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54E22897562002C3656 /* Constants.swift */; };
+		568DD56D22897562002C3656 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54F22897562002C3656 /* Extensions.swift */; };
+		568DD56E22897562002C3656 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54F22897562002C3656 /* Extensions.swift */; };
+		568DD56F22897562002C3656 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD54F22897562002C3656 /* Extensions.swift */; };
+		568DD57022897562002C3656 /* anx_monitoring_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 568DD55022897562002C3656 /* anx_monitoring_ios.h */; };
+		568DD57122897562002C3656 /* anx_monitoring_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 568DD55022897562002C3656 /* anx_monitoring_ios.h */; };
+		568DD57222897562002C3656 /* anx_monitoring_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 568DD55022897562002C3656 /* anx_monitoring_ios.h */; };
+		568DD57322897562002C3656 /* Monitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD55122897562002C3656 /* Monitoring.swift */; };
+		568DD57422897562002C3656 /* Monitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD55122897562002C3656 /* Monitoring.swift */; };
+		568DD57522897562002C3656 /* Monitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD55122897562002C3656 /* Monitoring.swift */; };
 		71529D45BE036975EEF7830F6B74C53B /* Pods-ANXMonitoringIOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FAEDEE184D68B0760DE9A7D6C6897B /* Pods-ANXMonitoringIOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7353FF54C61B9F2188F36D0BFCC8FF01 /* Pods-ANXMonitoringIOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DF0DB1E4C577B4DE41E2C0E259DA37 /* Pods-ANXMonitoringIOS_Tests-dummy.m */; };
 		7A302C450F79C366AD264236BC50EA1C /* Pods-ANXMonitoringIOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BA0D9C116383F568D6BA394ED049FE /* Pods-ANXMonitoringIOS_Example-dummy.m */; };
 		84BDAD1400BC0355D97795E00EEC9F4F /* ANXMonitoringIOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F5B1A80F74945A96384E85787A815D9 /* ANXMonitoringIOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		964CA5AA39B6F17BCD04FEBEDAEA252F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3708995E739562C9703026880CE108DD /* ReplaceMe.swift */; };
 		AE30485652E75BC2B17E9BFEBC2741BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		C278F98E89B888EAB2277659065D22CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		D49B54373C0F0152008C8C66B287366B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
@@ -42,27 +77,38 @@
 		26F7E1BEEFA342C98330A72B55E1EFC6 /* Pods-ANXMonitoringIOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANXMonitoringIOS_Example-resources.sh"; sourceTree = "<group>"; };
 		2708EDF14D45834563506025DD5298AF /* Pods-ANXMonitoringIOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ANXMonitoringIOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2CDFEBAF353B9DF34741CE622150119D /* Pods-ANXMonitoringIOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ANXMonitoringIOS_Tests.modulemap"; sourceTree = "<group>"; };
-		3708995E739562C9703026880CE108DD /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ANXMonitoringIOS/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		40C1CB0E3BECEE012BE4F8EFEB6B1EA7 /* Pods-ANXMonitoringIOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ANXMonitoringIOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4503D19F9208838D36253FDA78AB4848 /* Pods_ANXMonitoringIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ANXMonitoringIOS_Example.framework; path = "Pods-ANXMonitoringIOS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AD5391CA4EEF6DE6B1C0380462AD560 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4503D19F9208838D36253FDA78AB4848 /* Pods_ANXMonitoringIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANXMonitoringIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD5391CA4EEF6DE6B1C0380462AD560 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4DBA6980EE6E3D4935F749644FFF66A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F0773E569F51BFCD26022E6D05B6D50 /* Pods-ANXMonitoringIOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ANXMonitoringIOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		568DD54122897562002C3656 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		568DD54322897562002C3656 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		568DD54522897562002C3656 /* GithubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		568DD54722897562002C3656 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		568DD54822897562002C3656 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		568DD54A22897562002C3656 /* Runtime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runtime.swift; sourceTree = "<group>"; };
+		568DD54B22897562002C3656 /* Modules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modules.swift; sourceTree = "<group>"; };
+		568DD54C22897562002C3656 /* MonitoringModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitoringModel.swift; sourceTree = "<group>"; };
+		568DD54E22897562002C3656 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		568DD54F22897562002C3656 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		568DD55022897562002C3656 /* anx_monitoring_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = anx_monitoring_ios.h; sourceTree = "<group>"; };
+		568DD55122897562002C3656 /* Monitoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monitoring.swift; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5CD5FF053934584F6AE79C94738ABF0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5CD5FF053934584F6AE79C94738ABF0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		63BA0D9C116383F568D6BA394ED049FE /* Pods-ANXMonitoringIOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ANXMonitoringIOS_Example-dummy.m"; sourceTree = "<group>"; };
 		684AE66B29E68CEC22290FA47BD36D5C /* Pods-ANXMonitoringIOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANXMonitoringIOS_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6BE78D10C59DAD929F8A22EC55054F91 /* Pods-ANXMonitoringIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANXMonitoringIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		74F66947D5292E20586BF3771D4C15CD /* Pods-ANXMonitoringIOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ANXMonitoringIOS_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7754219316AB0C278EDA74D7FC1A8522 /* Pods-ANXMonitoringIOS_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANXMonitoringIOS_Tests-resources.sh"; sourceTree = "<group>"; };
-		77EE6EE3F21218483410FF505025BBED /* ANXMonitoringIOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ANXMonitoringIOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		77EE6EE3F21218483410FF505025BBED /* ANXMonitoringIOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ANXMonitoringIOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7F5B1A80F74945A96384E85787A815D9 /* ANXMonitoringIOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANXMonitoringIOS-umbrella.h"; sourceTree = "<group>"; };
 		8551E783D74B1F18B43144BD350C8856 /* ANXMonitoringIOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ANXMonitoringIOS-dummy.m"; sourceTree = "<group>"; };
 		85DF0DB1E4C577B4DE41E2C0E259DA37 /* Pods-ANXMonitoringIOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ANXMonitoringIOS_Tests-dummy.m"; sourceTree = "<group>"; };
 		904B6290E20D0ECB9EBA7A5000774082 /* Pods-ANXMonitoringIOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ANXMonitoringIOS_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		982A6A27C99211DA8D604FDDD2FB9AD9 /* ANXMonitoringIOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ANXMonitoringIOS.modulemap; sourceTree = "<group>"; };
-		9C40BF66C675FF3D3D6092D0A2A6D29D /* Pods_ANXMonitoringIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ANXMonitoringIOS_Tests.framework; path = "Pods-ANXMonitoringIOS_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C40BF66C675FF3D3D6092D0A2A6D29D /* Pods_ANXMonitoringIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANXMonitoringIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A776116E9C3A3DEE906F3AA31FFA3B13 /* Pods-ANXMonitoringIOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ANXMonitoringIOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B7FAEDEE184D68B0760DE9A7D6C6897B /* Pods-ANXMonitoringIOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ANXMonitoringIOS_Example-umbrella.h"; sourceTree = "<group>"; };
 		B99353B12FBBE387DF9C31B8CFDCF37F /* ANXMonitoringIOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANXMonitoringIOS-prefix.pch"; sourceTree = "<group>"; };
@@ -71,7 +117,7 @@
 		ED5ED73ADAC9FE4C11C2706F5D8D06E8 /* ANXMonitoringIOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANXMonitoringIOS.xcconfig; sourceTree = "<group>"; };
 		F826CD9C15BE161D430E75CD0685289F /* Pods-ANXMonitoringIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANXMonitoringIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F9088194042A8DFC156ACE0B56195A33 /* Pods-ANXMonitoringIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANXMonitoringIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FF0FCE2481D01506054093727E76A091 /* ANXMonitoringIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ANXMonitoringIOS.framework; path = ANXMonitoringIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0FCE2481D01506054093727E76A091 /* ANXMonitoringIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANXMonitoringIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +186,69 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ANXMonitoringIOS";
+			sourceTree = "<group>";
+		};
+		568DD53F22897562002C3656 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				568DD54022897562002C3656 /* Encoding */,
+				568DD54222897562002C3656 /* Manager */,
+				568DD54422897562002C3656 /* EndPoint */,
+				568DD54622897562002C3656 /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		568DD54022897562002C3656 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				568DD54122897562002C3656 /* ParameterEncoding.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		568DD54222897562002C3656 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				568DD54322897562002C3656 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		568DD54422897562002C3656 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				568DD54522897562002C3656 /* GithubAPI.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		568DD54622897562002C3656 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				568DD54722897562002C3656 /* Router.swift */,
+				568DD54822897562002C3656 /* NetworkLogger.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		568DD54922897562002C3656 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				568DD54A22897562002C3656 /* Runtime.swift */,
+				568DD54B22897562002C3656 /* Modules.swift */,
+				568DD54C22897562002C3656 /* MonitoringModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		568DD54D22897562002C3656 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				568DD54E22897562002C3656 /* Constants.swift */,
+				568DD54F22897562002C3656 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		5DE9FEF6E8232C75FEC5AD1A7466E43E /* Products */ = {
@@ -219,7 +328,11 @@
 		FE2991F9C3726BBD9523E6EEA4FFEC11 /* ANXMonitoringIOS */ = {
 			isa = PBXGroup;
 			children = (
-				3708995E739562C9703026880CE108DD /* ReplaceMe.swift */,
+				568DD55022897562002C3656 /* anx_monitoring_ios.h */,
+				568DD54922897562002C3656 /* Model */,
+				568DD55122897562002C3656 /* Monitoring.swift */,
+				568DD53F22897562002C3656 /* Networking */,
+				568DD54D22897562002C3656 /* Utils */,
 				F51054E54D134EDA25A446B415EB957D /* Pod */,
 				2FC2B2D75A8E84B52409DA538D4EC39E /* Support Files */,
 			);
@@ -234,6 +347,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568DD57222897562002C3656 /* anx_monitoring_ios.h in Headers */,
 				436B9BD9F14D1EA398F6AFC5E6B30E3C /* Pods-ANXMonitoringIOS_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +356,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568DD57022897562002C3656 /* anx_monitoring_ios.h in Headers */,
 				84BDAD1400BC0355D97795E00EEC9F4F /* ANXMonitoringIOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +365,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568DD57122897562002C3656 /* anx_monitoring_ios.h in Headers */,
 				71529D45BE036975EEF7830F6B74C53B /* Pods-ANXMonitoringIOS_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,12 +434,21 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					2D3EA6EBE611130DE91A97C842995CD6 = {
+						LastSwiftMigration = 1020;
+					};
+					7DCA82DD3E897E6EECA66355219A0483 = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -343,7 +468,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568DD56022897562002C3656 /* NetworkLogger.swift in Sources */,
+				568DD56622897562002C3656 /* Modules.swift in Sources */,
+				568DD56922897562002C3656 /* MonitoringModel.swift in Sources */,
+				568DD55722897562002C3656 /* NetworkManager.swift in Sources */,
+				568DD56322897562002C3656 /* Runtime.swift in Sources */,
+				568DD56C22897562002C3656 /* Constants.swift in Sources */,
+				568DD55422897562002C3656 /* ParameterEncoding.swift in Sources */,
+				568DD55D22897562002C3656 /* Router.swift in Sources */,
 				7353FF54C61B9F2188F36D0BFCC8FF01 /* Pods-ANXMonitoringIOS_Tests-dummy.m in Sources */,
+				568DD57522897562002C3656 /* Monitoring.swift in Sources */,
+				568DD56F22897562002C3656 /* Extensions.swift in Sources */,
+				568DD55A22897562002C3656 /* GithubAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +487,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568DD55F22897562002C3656 /* NetworkLogger.swift in Sources */,
+				568DD56522897562002C3656 /* Modules.swift in Sources */,
+				568DD56822897562002C3656 /* MonitoringModel.swift in Sources */,
+				568DD55622897562002C3656 /* NetworkManager.swift in Sources */,
+				568DD56222897562002C3656 /* Runtime.swift in Sources */,
+				568DD56B22897562002C3656 /* Constants.swift in Sources */,
+				568DD55322897562002C3656 /* ParameterEncoding.swift in Sources */,
+				568DD55C22897562002C3656 /* Router.swift in Sources */,
 				7A302C450F79C366AD264236BC50EA1C /* Pods-ANXMonitoringIOS_Example-dummy.m in Sources */,
+				568DD57422897562002C3656 /* Monitoring.swift in Sources */,
+				568DD56E22897562002C3656 /* Extensions.swift in Sources */,
+				568DD55922897562002C3656 /* GithubAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +506,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568DD55E22897562002C3656 /* NetworkLogger.swift in Sources */,
+				568DD56A22897562002C3656 /* Constants.swift in Sources */,
+				568DD56422897562002C3656 /* Modules.swift in Sources */,
+				568DD55522897562002C3656 /* NetworkManager.swift in Sources */,
+				568DD55822897562002C3656 /* GithubAPI.swift in Sources */,
+				568DD55222897562002C3656 /* ParameterEncoding.swift in Sources */,
+				568DD56122897562002C3656 /* Runtime.swift in Sources */,
+				568DD56D22897562002C3656 /* Extensions.swift in Sources */,
 				E2F67776549364AF57F4A4762431F1D3 /* ANXMonitoringIOS-dummy.m in Sources */,
-				964CA5AA39B6F17BCD04FEBEDAEA252F /* ReplaceMe.swift in Sources */,
+				568DD55B22897562002C3656 /* Router.swift in Sources */,
+				568DD56722897562002C3656 /* MonitoringModel.swift in Sources */,
+				568DD57322897562002C3656 /* Monitoring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +544,7 @@
 			baseConfigurationReference = F826CD9C15BE161D430E75CD0685289F /* Pods-ANXMonitoringIOS_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -411,6 +569,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -422,6 +581,7 @@
 			baseConfigurationReference = F9088194042A8DFC156ACE0B56195A33 /* Pods-ANXMonitoringIOS_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -445,6 +605,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -553,6 +714,7 @@
 			baseConfigurationReference = C70158A581A9EE29E5F97EB26F4D1C2D /* Pods-ANXMonitoringIOS_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -575,6 +737,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -677,6 +840,7 @@
 			baseConfigurationReference = 6BE78D10C59DAD929F8A22EC55054F91 /* Pods-ANXMonitoringIOS_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -699,6 +863,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

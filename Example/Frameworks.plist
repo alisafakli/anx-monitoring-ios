@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ANXMonitoringIOS</key>
+	<string>https://github.com/CocoaPods/Specs/blob/master/Specs/3/4/b/ANXMonitoringIOS/0.1.0/ANXMonitoringIOS.podspec.json</string>
+</dict>
+</plist>

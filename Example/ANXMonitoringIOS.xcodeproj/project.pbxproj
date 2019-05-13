@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		10047733DD919657C5640E45 /* Pods_ANXMonitoringIOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC5B77FFC96FD2F6BE7AB33 /* Pods_ANXMonitoringIOS_Tests.framework */; };
+		568DD5AD22898F7D002C3656 /* Frameworks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 568DD5AC22898F7C002C3656 /* Frameworks.plist */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		9C3C0C4B0773CEA1B9092BC1 /* Pods_ANXMonitoringIOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7DF5B71E7001527057DC8E /* Pods_ANXMonitoringIOS_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		2E65B9FC7B932B0506119FF3 /* Pods-ANXMonitoringIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANXMonitoringIOS_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANXMonitoringIOS_Tests/Pods-ANXMonitoringIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		568DD5AC22898F7C002C3656 /* Frameworks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Frameworks.plist; sourceTree = "<group>"; };
+		568DD5B222899153002C3656 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		568DD5B522899196002C3656 /* ANXMonitoringIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ANXMonitoringIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		568DD5B7228991F9002C3656 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5B080E6BBC8DF3233483F7F0 /* Pods-ANXMonitoringIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANXMonitoringIOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANXMonitoringIOS_Example/Pods-ANXMonitoringIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ANXMonitoringIOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANXMonitoringIOS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C3C0C4B0773CEA1B9092BC1 /* Pods_ANXMonitoringIOS_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,9 @@
 		5CDE38655C0FB27EB1973F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				568DD5B7228991F9002C3656 /* UIKit.framework */,
+				568DD5B522899196002C3656 /* ANXMonitoringIOS.framework */,
+				568DD5B222899153002C3656 /* Foundation.framework */,
 				BC7DF5B71E7001527057DC8E /* Pods_ANXMonitoringIOS_Example.framework */,
 				FDC5B77FFC96FD2F6BE7AB33 /* Pods_ANXMonitoringIOS_Tests.framework */,
 			);
@@ -81,6 +87,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				568DD5AC22898F7C002C3656 /* Frameworks.plist */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for ANXMonitoringIOS */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -249,6 +256,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				568DD5AD22898F7D002C3656 /* Frameworks.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import ANXMonitoringIOS
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        DispatchQueue.main.async {
+            if let path = Bundle.main.path(forResource: "Frameworks", ofType: "plist"), let nsDictionary = NSDictionary(contentsOfFile: path) {
+                let _ = Monitoring(nsDictionary)
+                
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
