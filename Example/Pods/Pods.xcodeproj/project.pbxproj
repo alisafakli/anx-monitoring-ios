@@ -188,49 +188,6 @@
 			path = "Example/Pods/Target Support Files/ANXMonitoringIOS";
 			sourceTree = "<group>";
 		};
-		568DD53F22897562002C3656 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				568DD54122897562002C3656 /* ParameterEncoding.swift */,
-				568DD54322897562002C3656 /* NetworkManager.swift */,
-				568DD54522897562002C3656 /* GithubAPI.swift */,
-				568DD54722897562002C3656 /* Router.swift */,
-				568DD54822897562002C3656 /* NetworkLogger.swift */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		568DD54D22897562002C3656 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				568DD54E22897562002C3656 /* Constants.swift */,
-				568DD54F22897562002C3656 /* Extensions.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		568DD5C22289A36C002C3656 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				568DD5C32289A452002C3656 /* Models */,
-				568DD55022897562002C3656 /* anx_monitoring_ios.h */,
-				568DD55122897562002C3656 /* Monitoring.swift */,
-				568DD53F22897562002C3656 /* Networking */,
-				568DD54D22897562002C3656 /* Utils */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		568DD5C32289A452002C3656 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				568DD54A22897562002C3656 /* Runtime.swift */,
-				568DD54B22897562002C3656 /* Modules.swift */,
-				568DD54C22897562002C3656 /* MonitoringModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		5DE9FEF6E8232C75FEC5AD1A7466E43E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,7 +265,18 @@
 		FE2991F9C3726BBD9523E6EEA4FFEC11 /* ANXMonitoringIOS */ = {
 			isa = PBXGroup;
 			children = (
-				568DD5C22289A36C002C3656 /* Classes */,
+				568DD54A22897562002C3656 /* Runtime.swift */,
+				568DD54B22897562002C3656 /* Modules.swift */,
+				568DD54C22897562002C3656 /* MonitoringModel.swift */,
+				568DD55022897562002C3656 /* anx_monitoring_ios.h */,
+				568DD55122897562002C3656 /* Monitoring.swift */,
+				568DD54122897562002C3656 /* ParameterEncoding.swift */,
+				568DD54322897562002C3656 /* NetworkManager.swift */,
+				568DD54522897562002C3656 /* GithubAPI.swift */,
+				568DD54722897562002C3656 /* Router.swift */,
+				568DD54822897562002C3656 /* NetworkLogger.swift */,
+				568DD54E22897562002C3656 /* Constants.swift */,
+				568DD54F22897562002C3656 /* Extensions.swift */,
 				F51054E54D134EDA25A446B415EB957D /* Pod */,
 				2FC2B2D75A8E84B52409DA538D4EC39E /* Support Files */,
 			);

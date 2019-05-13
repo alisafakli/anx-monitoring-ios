@@ -31,7 +31,7 @@ Anexia Version Monitoring Framework to collecting Dependency versions & licenses
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Classes/**/*.{h,m,swift}'
+  s.source_files = '*.{h,m,swift}'
   #s.source_files = 'Classes/**/*.{h,m,swift}'
   #"FOLDERNAME1/*.{swift}", "FOLDERNAME2/*.{swift}"
   # s.resource_bundles = {
