@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ANXMonitoringIOS_Example' do
+  pod 'ANXMonitoringIOS', :path => '../'
+
+  target 'ANXMonitoringIOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
