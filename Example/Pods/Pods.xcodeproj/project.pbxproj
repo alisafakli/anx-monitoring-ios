@@ -192,7 +192,7 @@
 			path = "Example/Pods/Target Support Files/ANXMonitoringIOS";
 			sourceTree = "<group>";
 		};
-		568DD5CD2289B95D002C3656 /* Classes */ = {
+		568DD5CE2289BA0C002C3656 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				568DD54A22897562002C3656 /* Runtime.swift */,
@@ -209,7 +209,7 @@
 				568DD54F22897562002C3656 /* Extensions.swift */,
 				568DD5C82289B2C5002C3656 /* Logger.swift */,
 			);
-			path = Classes;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		5DE9FEF6E8232C75FEC5AD1A7466E43E /* Products */ = {
@@ -289,7 +289,7 @@
 		FE2991F9C3726BBD9523E6EEA4FFEC11 /* ANXMonitoringIOS */ = {
 			isa = PBXGroup;
 			children = (
-				568DD5CD2289B95D002C3656 /* Classes */,
+				568DD5CE2289BA0C002C3656 /* Core */,
 				F51054E54D134EDA25A446B415EB957D /* Pod */,
 				2FC2B2D75A8E84B52409DA538D4EC39E /* Support Files */,
 			);
