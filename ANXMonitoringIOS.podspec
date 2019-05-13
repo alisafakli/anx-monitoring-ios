@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ANXMonitoringIOS'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Anexia Version Monitoring Framework'
   s.swift_version    = '4.0'
 
@@ -26,12 +26,12 @@ Anexia Version Monitoring Framework to collecting Dependency versions & licenses
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'anx-asafakli' => 'asafakli@anexia-it.com' }
-  s.source           = { :git => 'https://github.com/anx-asafakli/anx-monitoring-ios.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/anx-asafakli/anx-monitoring-ios.git', :tag => s.version}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Classes/Models/*.{h,m,swift}', 'Classes/Networking/*.{h,m,swift}', 'Classes/Utils/*.{h,m,swift}'
+  s.source_files = 'Classes/**/*.{h,m,swift}'
   #s.source_files = 'Classes/**/*.{h,m,swift}'
   #"FOLDERNAME1/*.{swift}", "FOLDERNAME2/*.{swift}"
   # s.resource_bundles = {
