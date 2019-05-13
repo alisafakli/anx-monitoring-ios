@@ -113,8 +113,9 @@ public class Monitoring {
         groupFinal.notify(queue: DispatchQueue.main) {
             print("Data is ready!")
             let moduleArray = self.getModules(newVersionAvailableDict: newVersionAvailableDict, dict: dataDict)
-            let runtime = self.getRuntimeData()
+            
             let modules = Modules(modules: moduleArray)
+            let runtime = self.getRuntimeData(modules: modules)
             
             let monitoringModel = MonitoringModel(runtime: runtime, modules: modules)
 //            networkManager.sendMonitoringData(monitoringModel: monitoringModel, success: {
@@ -129,16 +130,23 @@ public class Monitoring {
         }
     }
     
+    private func getNewestVersionOfMonitoringFramework(modules: Modules) -> String? {
+        if let newVersion = modules.modules.filter({$0.name == "ANXMonitoringIOS"}).first?.newest_version    {
+            return newVersion
+        }
+        return nil
+    }
     
-    private func getRuntimeData() -> Runtime {
+    private func getRuntimeData(modules: Modules) -> Runtime {
         let platform_version = UIDevice.current.model + ", version: " + UIDevice.current.systemVersion
         let platform = UIDevice.current.systemName
-        let installedVersion = getInstalledFrameworksWithVersionNumber()["anx_monitoring_ios"]
+        let installedVersion = getInstalledFrameworksWithVersionNumber()["ANXMonitoringIOS"]
+        let newVersion = getNewestVersionOfMonitoringFramework(modules: modules)
         //TODO: Get the newest version for framework
         return Runtime(platform_version: platform_version ,
                        platform: platform,
                        framework_installed_version: installedVersion ?? "",
-                       framework_newest_version: "",
+                       framework_newest_version: newVersion ?? (installedVersion ?? ""),
                        framework: Constants.IOS_FRAMEWORK)
     }
     

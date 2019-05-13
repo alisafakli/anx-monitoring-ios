@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ANXMonitoringIOS'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Anexia Version Monitoring Framework'
   s.swift_version    = '4.0'
 
