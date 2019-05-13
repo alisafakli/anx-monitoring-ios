@@ -191,45 +191,13 @@
 		568DD53F22897562002C3656 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				568DD54022897562002C3656 /* Encoding */,
-				568DD54222897562002C3656 /* Manager */,
-				568DD54422897562002C3656 /* EndPoint */,
-				568DD54622897562002C3656 /* Service */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		568DD54022897562002C3656 /* Encoding */ = {
-			isa = PBXGroup;
-			children = (
 				568DD54122897562002C3656 /* ParameterEncoding.swift */,
-			);
-			path = Encoding;
-			sourceTree = "<group>";
-		};
-		568DD54222897562002C3656 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
 				568DD54322897562002C3656 /* NetworkManager.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		568DD54422897562002C3656 /* EndPoint */ = {
-			isa = PBXGroup;
-			children = (
 				568DD54522897562002C3656 /* GithubAPI.swift */,
-			);
-			path = EndPoint;
-			sourceTree = "<group>";
-		};
-		568DD54622897562002C3656 /* Service */ = {
-			isa = PBXGroup;
-			children = (
 				568DD54722897562002C3656 /* Router.swift */,
 				568DD54822897562002C3656 /* NetworkLogger.swift */,
 			);
-			path = Service;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		568DD54D22897562002C3656 /* Utils */ = {
