@@ -65,7 +65,7 @@ struct NetworkManager {
                         
                         completion(finalArray,nil)
                     }catch {
-                        print(error)
+                        Logger.log(error)
                         completion(nil, NetworkResponse.unableToDecode.rawValue)
                     }
                 case .failure(let networkFailureError):
@@ -102,7 +102,7 @@ struct NetworkManager {
                         
                         
                     }catch {
-                        print(error)
+                        Logger.log(error)
                         completion(nil, NetworkResponse.unableToDecode.rawValue)
                     }
                 case .failure(let networkFailureError):
@@ -118,7 +118,7 @@ struct NetworkManager {
         guard let jsonData = try? jsonEncoder.encode(monitoringModel) else {
             return failure("JSON format is invalid!")
         }
-        print(jsonData.prettyPrintedJSONString as Any)
+        Logger.log(jsonData.prettyPrintedJSONString as Any)
         let token = ""
         router.request(.sendMonitoringDataToAPI(accessToken: token), jsonData) { (data, response, error) in
             if error != nil {

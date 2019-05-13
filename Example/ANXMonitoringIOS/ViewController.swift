@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         DispatchQueue.main.async {
             if let path = Bundle.main.path(forResource: "Frameworks", ofType: "plist"), let nsDictionary = NSDictionary(contentsOfFile: path) {
-                let _ = Monitoring(nsDictionary)
+                let _ = Monitoring(nsDictionary, enableLog: true)
                 
             }
         }

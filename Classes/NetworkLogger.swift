@@ -10,7 +10,7 @@ import Foundation
 
 class NetworkLogger {
     static func log(request: URLRequest) {
-        print(request)
+        Logger.log(request)
     }
     
     static func log(response: URLResponse) {}

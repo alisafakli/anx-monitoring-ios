@@ -12,7 +12,8 @@ public class Monitoring {
     
     let frameworkApiDictionary:NSDictionary!
     
-    public init() {
+    public init(enableLog: Bool) {
+        Logger.isMonitoringLogEnabled = enableLog
         var nsDictionary: NSDictionary!
         if let path = Bundle.main.path(forResource: Constants.DEFAULT_FRAMEWORK_PLIST, ofType: "plist") {
             nsDictionary = NSDictionary(contentsOfFile: path)
@@ -23,7 +24,8 @@ public class Monitoring {
         collectData()
     }
     
-    public init(_ frameworkApiDictionary: NSDictionary) {
+    public init(_ frameworkApiDictionary: NSDictionary, enableLog: Bool) {
+        Logger.isMonitoringLogEnabled = enableLog
         self.frameworkApiDictionary = frameworkApiDictionary
         collectData()
     }
@@ -41,10 +43,10 @@ public class Monitoring {
                     if let versionArray = data {
                         if let newVersion = self.getNewVersion(currentVersion: name, availableVersions: versionArray) {
                             if newVersion == version {
-                                print("\(tuple.name) (\(version)) is up to date")
+                                Logger.log("\(tuple.name) (\(version)) is up to date")
 
                             } else {
-                                print("\(tuple.name) (\(version)) has newer version: \(newVersion)")
+                                Logger.log("\(tuple.name) (\(version)) has newer version: \(newVersion)")
                                 newVersionAvailableDict["\(tuple.name)"] = newVersion
                             }
                             
@@ -56,7 +58,7 @@ public class Monitoring {
             }
         }
         downloadGroup.notify(queue: DispatchQueue.main) {
-            print(newVersionAvailableDict)
+            Logger.log(newVersionAvailableDict)
             self.getLicenses(newVersionAvailableDict: newVersionAvailableDict, frameworkVersionDict: frameworkVersionDict)
         }
     }
@@ -87,7 +89,6 @@ public class Monitoring {
 
         group1.notify(queue: DispatchQueue.main) {
             groupFinal.leave()
-            print(dataDict)
 
         }
 
@@ -106,12 +107,12 @@ public class Monitoring {
 
         group2.notify(queue: DispatchQueue.main) {
             groupFinal.leave()
-            print(dataDict)
+            Logger.log(dataDict)
         }
         
         //All data collected
         groupFinal.notify(queue: DispatchQueue.main) {
-            print("Data is ready!")
+            Logger.log("Data is ready!")
             let moduleArray = self.getModules(newVersionAvailableDict: newVersionAvailableDict, dict: dataDict)
             
             let modules = Modules(modules: moduleArray)
@@ -125,7 +126,7 @@ public class Monitoring {
 //            })
             //TODO: Will be Deleted after API implementation
             if let jsonData = try? JSONEncoder().encode(monitoringModel) {
-                print(jsonData.prettyPrintedJSONString as Any)
+                Logger.log(jsonData.prettyPrintedJSONString as Any)
             }
         }
     }

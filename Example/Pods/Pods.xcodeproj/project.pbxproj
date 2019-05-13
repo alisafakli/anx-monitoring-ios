@@ -44,6 +44,9 @@
 		568DD57322897562002C3656 /* Monitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD55122897562002C3656 /* Monitoring.swift */; };
 		568DD57422897562002C3656 /* Monitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD55122897562002C3656 /* Monitoring.swift */; };
 		568DD57522897562002C3656 /* Monitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD55122897562002C3656 /* Monitoring.swift */; };
+		568DD5C92289B2C5002C3656 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD5C82289B2C5002C3656 /* Logger.swift */; };
+		568DD5CA2289B2C5002C3656 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD5C82289B2C5002C3656 /* Logger.swift */; };
+		568DD5CB2289B2C5002C3656 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DD5C82289B2C5002C3656 /* Logger.swift */; };
 		71529D45BE036975EEF7830F6B74C53B /* Pods-ANXMonitoringIOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FAEDEE184D68B0760DE9A7D6C6897B /* Pods-ANXMonitoringIOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7353FF54C61B9F2188F36D0BFCC8FF01 /* Pods-ANXMonitoringIOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DF0DB1E4C577B4DE41E2C0E259DA37 /* Pods-ANXMonitoringIOS_Tests-dummy.m */; };
 		7A302C450F79C366AD264236BC50EA1C /* Pods-ANXMonitoringIOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BA0D9C116383F568D6BA394ED049FE /* Pods-ANXMonitoringIOS_Example-dummy.m */; };
@@ -94,6 +97,7 @@
 		568DD54F22897562002C3656 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		568DD55022897562002C3656 /* anx_monitoring_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = anx_monitoring_ios.h; sourceTree = "<group>"; };
 		568DD55122897562002C3656 /* Monitoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monitoring.swift; sourceTree = "<group>"; };
+		568DD5C82289B2C5002C3656 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5CD5FF053934584F6AE79C94738ABF0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		63BA0D9C116383F568D6BA394ED049FE /* Pods-ANXMonitoringIOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ANXMonitoringIOS_Example-dummy.m"; sourceTree = "<group>"; };
@@ -188,7 +192,7 @@
 			path = "Example/Pods/Target Support Files/ANXMonitoringIOS";
 			sourceTree = "<group>";
 		};
-		568DD5C62289B0D0002C3656 /* Classes */ = {
+		568DD5C72289B206002C3656 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				568DD54A22897562002C3656 /* Runtime.swift */,
@@ -203,6 +207,7 @@
 				568DD54822897562002C3656 /* NetworkLogger.swift */,
 				568DD54E22897562002C3656 /* Constants.swift */,
 				568DD54F22897562002C3656 /* Extensions.swift */,
+				568DD5C82289B2C5002C3656 /* Logger.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -284,7 +289,7 @@
 		FE2991F9C3726BBD9523E6EEA4FFEC11 /* ANXMonitoringIOS */ = {
 			isa = PBXGroup;
 			children = (
-				568DD5C62289B0D0002C3656 /* Classes */,
+				568DD5C72289B206002C3656 /* Classes */,
 				F51054E54D134EDA25A446B415EB957D /* Pod */,
 				2FC2B2D75A8E84B52409DA538D4EC39E /* Support Files */,
 			);
@@ -429,6 +434,7 @@
 				568DD55422897562002C3656 /* ParameterEncoding.swift in Sources */,
 				568DD55D22897562002C3656 /* Router.swift in Sources */,
 				7353FF54C61B9F2188F36D0BFCC8FF01 /* Pods-ANXMonitoringIOS_Tests-dummy.m in Sources */,
+				568DD5CB2289B2C5002C3656 /* Logger.swift in Sources */,
 				568DD57522897562002C3656 /* Monitoring.swift in Sources */,
 				568DD56F22897562002C3656 /* Extensions.swift in Sources */,
 				568DD55A22897562002C3656 /* GithubAPI.swift in Sources */,
@@ -448,6 +454,7 @@
 				568DD55322897562002C3656 /* ParameterEncoding.swift in Sources */,
 				568DD55C22897562002C3656 /* Router.swift in Sources */,
 				7A302C450F79C366AD264236BC50EA1C /* Pods-ANXMonitoringIOS_Example-dummy.m in Sources */,
+				568DD5CA2289B2C5002C3656 /* Logger.swift in Sources */,
 				568DD57422897562002C3656 /* Monitoring.swift in Sources */,
 				568DD56E22897562002C3656 /* Extensions.swift in Sources */,
 				568DD55922897562002C3656 /* GithubAPI.swift in Sources */,
@@ -467,6 +474,7 @@
 				568DD56122897562002C3656 /* Runtime.swift in Sources */,
 				568DD56D22897562002C3656 /* Extensions.swift in Sources */,
 				E2F67776549364AF57F4A4762431F1D3 /* ANXMonitoringIOS-dummy.m in Sources */,
+				568DD5C92289B2C5002C3656 /* Logger.swift in Sources */,
 				568DD55B22897562002C3656 /* Router.swift in Sources */,
 				568DD56722897562002C3656 /* MonitoringModel.swift in Sources */,
 				568DD57322897562002C3656 /* Monitoring.swift in Sources */,
