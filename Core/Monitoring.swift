@@ -12,6 +12,20 @@ public class Monitoring {
     
     let frameworkApiDictionary:NSDictionary!
     
+    /**
+     First Initializer
+     
+     - Class: Monitoring
+     - Parameter: enableLog: Enable / Disable Log
+     
+     - Remark:
+     Framework .plist file not exist as input in this initializer
+     Default: Try to find Frameworks.plist automatically
+     
+     - SeeAlso:  `public init(_ frameworkApiDictionary: NSDictionary, enableLog: Bool)`
+     
+     - Precondition: `enableLog` should not be nil.
+     */
     public init(enableLog: Bool) {
         Logger.isMonitoringLogEnabled = enableLog
         var nsDictionary: NSDictionary!
@@ -24,12 +38,35 @@ public class Monitoring {
         collectData()
     }
     
+    /**
+     Second Initializer
+     
+     - Class: Monitoring
+     - Parameter: 'frameworkApiDictionary' dictionary object filled with .plist key and values
+     - Parameter: enableLog: Enable / Disable Log
+     
+     - Remark:
+     Custom .plist file's data is exist as dictionary in this initializer
+     
+     - SeeAlso:  `public init(enableLog: Bool)`
+     
+     - Precondition: `frameworkApiDictionary` and  `enableLog` should not be nil.
+     */
     public init(_ frameworkApiDictionary: NSDictionary, enableLog: Bool) {
         Logger.isMonitoringLogEnabled = enableLog
         self.frameworkApiDictionary = frameworkApiDictionary
         collectData()
     }
     
+    /**
+     Starts to collect data from API
+     
+     - Class: Monitoring
+     
+     - Remark:
+     This function send request to collect all versions for each key value in dictionary and determine which one has a newer version.
+     
+     */
     private func collectData() {
         let frameworkVersionDict = getInstalledFrameworksWithVersionNumber()
         let networkManager = NetworkManager()
@@ -63,6 +100,17 @@ public class Monitoring {
         }
     }
     
+    /**
+     Collect all license data from raw json
+     
+     - Class: Monitoring
+     - Parameter: 'newVersionAvailableDict' values which has newer version
+     - Parameter: 'frameworkVersionDict' existing versions
+     
+     - Remark:
+    This function sends multiple async request so we have 2 request DispatchGroup and for the determine all finished we are using third DispatchGroup 'groupFinal'
+
+     */
     private func getLicenses(newVersionAvailableDict: [String:String], frameworkVersionDict: [String:String]) {
         let group1 = DispatchGroup()
         let group2 = DispatchGroup()
@@ -131,6 +179,13 @@ public class Monitoring {
         }
     }
     
+    /**
+     Find the newest version for ANXMonitoringIOS framework
+     
+     - Class: Monitoring
+     - Parameter: modules: Modules
+     
+     */
     private func getNewestVersionOfMonitoringFramework(modules: Modules) -> String? {
         if let newVersion = modules.modules.filter({$0.name == "ANXMonitoringIOS"}).first?.newest_version    {
             return newVersion
@@ -138,8 +193,15 @@ public class Monitoring {
         return nil
     }
     
+    /**
+     Prepare Runtime object's data here
+     
+     - Class: Monitoring
+     - Parameter: modules: Modules
+     
+     */
     private func getRuntimeData(modules: Modules) -> Runtime {
-        let platform_version = UIDevice.current.model + ", version: " + UIDevice.current.systemVersion
+        let platform_version = UIDevice.current.model + ", version: " + UIDevice.current.systemVersion + ", deviceId: " + UIDevice.current.identifierForVendor!.uuidString + " " + "(\(Date()))"
         let platform = UIDevice.current.systemName
         let installedVersion = getInstalledFrameworksWithVersionNumber()["ANXMonitoringIOS"]
         let newVersion = getNewestVersionOfMonitoringFramework(modules: modules)
@@ -151,6 +213,14 @@ public class Monitoring {
                        framework: Constants.IOS_FRAMEWORK)
     }
     
+    /**
+     Prepare Module array for Modules object's data here
+     
+     - Class: Monitoring
+     - Parameter: newVersionAvailableDict: [String:String] - Only has new versions
+     - Parameter: dict: [String:String] - All data
+
+     */
     private func getModules(newVersionAvailableDict:[String:String], dict: [String:String]) -> [Module] {
         var moduleArray: [Module] = []
         for (key,license) in dict {
@@ -189,6 +259,15 @@ public class Monitoring {
         return moduleArray
     }
     
+    /**
+     Determine newest version here
+     
+     - Class: Monitoring
+     - Parameter: currentVersion: String - installed version
+     - Parameter: availableVersions: [String] - All available versions
+     
+     
+     */
     private func getNewVersion(currentVersion: String, availableVersions: [String]) -> String? {
         var arrayOfStrings = availableVersions
         //Remove beta versions in the list
@@ -205,6 +284,15 @@ public class Monitoring {
         return nil
     }
     
+    /**
+     Do string operationz s for preparing correct url to collect data
+     
+     - Class: Monitoring
+     - Parameter: name: String - framework name
+     - Return: (address:String, name:String)? tuple
+     
+     
+     */
     private func getRepositoryInfoFromFrameworkName(name: String) -> (address:String, name:String)? {
         for (key, value) in self.frameworkApiDictionary {
             if let key = key as? String, key == name, let value = value as? String {
@@ -216,6 +304,14 @@ public class Monitoring {
         return nil
     }
     
+    /**
+     Prepare dictionary for installed frameworks with version
+     
+     - Class: Monitoring
+     - Return: [String:String] dictionary
+     
+     
+     */
     private func getInstalledFrameworksWithVersionNumber() -> [String:String] {
         var frameworkVersionDict: [String:String] = [:]
         let frameworks = Bundle.allFrameworks.filter({

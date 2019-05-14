@@ -97,9 +97,12 @@ struct NetworkManager {
                                 completion(text,nil)
                             } else if let license = dict["license"] as? String {
                                 completion(license,nil)
+                            } else if let license = dict["license"] as? [String:String], let type = license["type"], let file = license["file"] {
+                                completion("\(type), Please check \(file) file for details.",nil)
+                            } else if let license = dict["license"] as? [String:String], let type = license["type"] {
+                                completion(type,nil)
                             }
                         }
-                        
                         
                     }catch {
                         Logger.log(error)
