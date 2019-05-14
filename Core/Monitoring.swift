@@ -8,6 +8,19 @@
 
 import Foundation
 
+@objc public class ObjCMonitoring: NSObject {
+    
+    @objc public init(enableLog: Bool) {
+        super.init()
+        let _ = Monitoring(enableLog: enableLog)
+    }
+    
+    @objc public init(_ frameworkApiDictionary: NSDictionary, enableLog: Bool) {
+        super.init()
+        let _ = Monitoring(frameworkApiDictionary, enableLog: enableLog)
+    }
+}
+
 public class Monitoring {
     
     let frameworkApiDictionary:NSDictionary!

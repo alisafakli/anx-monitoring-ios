@@ -14,7 +14,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 * Check your Pods in Pod file and copy the name of your first pod. 
 * Paste this name as a key area of the plist.
 * Find this pod in https://cocoapods.org/
-Eg. https://cocoapods.org/pods/ANXMonitoringIOS
+        Eg. https://cocoapods.org/pods/ANXMonitoringIOS
 * Right click "See Podspec" button and press "Copy Link Address"
 * Come back your 'Frameworks.plist' file and paste the link as a value.
 
@@ -28,8 +28,6 @@ Eg. https://cocoapods.org/pods/ANXMonitoringIOS
 
 
 ## Installation
-
-
 
 ANXMonitoringIOS is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -50,7 +48,28 @@ DispatchQueue.main.async {
     }
 }
 ```
+
 Objective-C
+```ruby
+#import "AppDelegate.h"
+@import ANXMonitoringIOS;
+#import "ANXMonitoringIOS-Swift.h"
+
+@interface AppDelegate ()
+@end
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+// Override point for customization after application launch.
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSString* path = [[NSBundle mainBundle] pathForResource:@"Frameworks" ofType:@"plist"];
+        NSDictionary* dict = [NSDictionary dictionaryWithContentsOfFile:path];
+        ObjCMonitoring * _monitoring = [[ObjCMonitoring alloc] init:dict enableLog:YES];
+    });
+    return YES;
+}
+```
+* Also check Build settings > Header Search Paths, and add "${PODS_ROOT}/" as recursive
 
 
 ## Author
