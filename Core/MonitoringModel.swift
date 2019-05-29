@@ -10,10 +10,10 @@ import Foundation
 
 struct MonitoringModel: Codable {
     var runtime: Runtime
-    var modules: Modules
+    var modules: [Module]
     
     init(runtime: Runtime, modules: Modules) {
         self.runtime = runtime
-        self.modules = modules
+        self.modules = modules.modules
     }
 }
