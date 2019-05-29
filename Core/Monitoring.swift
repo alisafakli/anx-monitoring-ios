@@ -244,6 +244,9 @@ public class Monitoring {
         for (key,license) in dict {
             let array = key.split(separator: Constants.KEY_SEPERATOR.first!)
             if let name = array.first, let version = array.last {
+                if name == "ANXMonitoringIOS" {
+                    continue
+                }
                 // - Version is up to date
                 if !newVersionAvailableDict.keys.contains(String(name)) {
                     let module = Module(newest_version: String(version), installed_version: String(version), installed_version_licences: [license], name: String(name), newest_version_licences: [license])
