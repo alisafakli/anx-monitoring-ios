@@ -49,6 +49,62 @@ DispatchQueue.main.async {
 }
 ```
 
+For sharing output file, add this notification observer in AppDelegate.swift 
+```ruby
+NotificationCenter.default.addObserver(self,selector: #selector(shareNotification),
+                                    name: NSNotification.Name(rawValue: "ANXMonitoringIOS"),object: nil)
+...
+@objc func shareNotification(notification: NSNotification){
+    if let dict = notification.userInfo as NSDictionary? {
+        if let jsonData = dict["json"] as? Data {
+            let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+            let documentsDirectory = paths[0]
+            let filename = "\(documentsDirectory)/ANXMonitoringIOSOutput.json"
+            let fileURL = URL(fileURLWithPath: filename)
+            do {
+                try jsonData.write(to: fileURL, options: .atomic)
+            } catch {
+                print("Failed to write version monitoring json.")
+            }
+            let vc = UIActivityViewController(activityItems: [fileURL], applicationActivities: [])
+            self.window?.rootViewController?.present(vc, animated: true, completion: nil)
+        }       
+    }
+}
+```
+Final result should looks like below in AppDelegate.swift
+```ruby
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:      [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        NotificationCenter.default.addObserver(self,selector: #selector(shareNotification),
+                                               name: NSNotification.Name(rawValue: "ANXMonitoringIOS"),object: nil)
+        
+        DispatchQueue.main.async {
+            if let path = Bundle.main.path(forResource: "Frameworks", ofType: "plist"), let nsDictionary = NSDictionary(contentsOfFile: path) {
+                let _ = Monitoring(nsDictionary, enableLog: true)
+            }
+        }
+        return true
+    }
+    
+    @objc func shareNotification(notification: NSNotification){
+    if let dict = notification.userInfo as NSDictionary? {
+        if let jsonData = dict["json"] as? Data {
+            let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+            let documentsDirectory = paths[0]
+            let filename = "\(documentsDirectory)/ANXMonitoringIOSOutput.json"
+            let fileURL = URL(fileURLWithPath: filename)
+            do {
+               try jsonData.write(to: fileURL, options: .atomic)
+            } catch {
+                print("Failed to write version monitoring json.")
+            }
+            let vc = UIActivityViewController(activityItems: [fileURL], applicationActivities: [])
+            self.window?.rootViewController?.present(vc, animated: true, completion: nil)
+        }
+    }
+}
+```
+
 Objective-C
 ```ruby
 #import "AppDelegate.h"
@@ -60,16 +116,42 @@ Objective-C
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-// Override point for customization after application launch.
+    // Override point for customization after application launch.
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(shareNotification:)
+                                                 name:@"ANXMonitoringIOS"
+                                               object:nil];
     dispatch_async(dispatch_get_main_queue(), ^{
         NSString* path = [[NSBundle mainBundle] pathForResource:@"Frameworks" ofType:@"plist"];
         NSDictionary* dict = [NSDictionary dictionaryWithContentsOfFile:path];
-        ObjCMonitoring * _monitoring = [[ObjCMonitoring alloc] init:dict enableLog:YES];
+        ObjCMonitoring *monitoring = [[ObjCMonitoring alloc] init:dict enableLog:YES];
     });
     return YES;
 }
+- (void) shareNotification:(NSNotification *) notification
+{
+    NSDictionary *userInfo = notification.userInfo;
+    NSData *jsonData = [userInfo objectForKey:@"json"];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *filePath = [[paths objectAtIndex:0]stringByAppendingPathComponent:@"ANXMonitoringIOSOutput.json"];
+    NSMutableArray *itemToShare = [[NSMutableArray alloc] init];
+    [itemToShare addObject:filePath];
+    if ([jsonData writeToFile:filePath atomically:YES]) {
+        UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemToShare applicationActivities:nil];
+        activityVC.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeCopyToPasteboard, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll]; 
+        UIViewController *topController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+        while (topController.presentedViewController) {
+            topController = topController.presentedViewController;
+        }
+        [topController presentViewController:activityVC animated:YES completion:nil];
+    }
+}
 ```
-* Also check Build settings > Header Search Paths, and add "${PODS_ROOT}/" as recursive
+
+
+
+*** Also check Build settings > Header Search Paths, and add "${PODS_ROOT}/" as recursive ***
+
 
 
 ## Author

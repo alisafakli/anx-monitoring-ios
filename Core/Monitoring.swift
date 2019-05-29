@@ -81,6 +81,7 @@ public class Monitoring {
      
      */
     private func collectData() {
+        
         let frameworkVersionDict = getInstalledFrameworksWithVersionNumber()
         let networkManager = NetworkManager()
         let downloadGroup = DispatchGroup()
@@ -188,9 +189,13 @@ public class Monitoring {
             //TODO: Will be Deleted after API implementation
             if let jsonData = try? JSONEncoder().encode(monitoringModel) {
                 Logger.log(jsonData.prettyPrintedJSONString as Any)
+                let jsonDataDict:[String: Data] = ["json": jsonData]
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ANXMonitoringIOS"), object: nil, userInfo: jsonDataDict)
+                
             }
         }
     }
+    
     
     /**
      Find the newest version for ANXMonitoringIOS framework
